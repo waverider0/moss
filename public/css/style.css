@@ -1,26 +1,30 @@
 body {
     background-image: url("../assets/landing_page_bg.jpg");
-    background-size: cover;
     background-position: center;
+    background-size: cover;
     height: 100vh;
     margin: 0;
 }
 
 h1 {
+    color: white;
     font-size: 6rem;
     line-height: 0.2;
 }
 
 .container {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
+    justify-content: center;
 }
 
 button {
-    padding: 15px 50px;
+    background-color: #2b2933;
+    border-radius: 5px;
+    color: white;
     margin: 0 10px;
+    padding: 15px 50px;
 }
 
