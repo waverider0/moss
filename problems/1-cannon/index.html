@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1. Cannon - Moss</title>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>1. Cannon</h1>
+        <img src="cannon.png" alt="Cannon diagram" class="problem-image">
+        <p>
+            A cannon is fired at an angle of \(45^\circ\) with an initial velocity of \(100 \text{ m/s}\).
+            What is the horizontal distance traveled? (assume no air resistance)
+        </p>
+
+        <div id="interaction">
+            <div class="input-row">
+                <input type="number" id="answer" placeholder="Enter your answer (m)">
+                <button id="submit-btn" onclick="checkAnswer()">Submit</button>
+            </div>
+            <div class="solution-btn-wrapper">
+                <button id="solution-btn" onclick="toggleSolution()" style="display: none;">Show Solution</button>
+            </div>
+        </div>
+
+        <div id="solution-section" style="display: none;">
+            <div class="solution-block">
+                <div class="solution-header">Solution 1</div>
+                <p>
+                    The total time of flight is given by:  
+                    \( t = \frac{2v \sin \theta}{g} = \frac{2 \cdot 100 \cdot \sin 45^\circ}{9.8} \approx 14.43 \text{ s} \)
+                </p>
+                <p>
+                    The horizontal distance is:  
+                    \( x = v \cos \theta \cdot t \approx 100 \cdot \cos 45^\circ \cdot 14.43 \approx 1020 \text{ m} \)
+                </p>
+            </div>
+
+            <div class="solution-block">
+                <div class="solution-header">Solution 2 (Detailed)</div>
+                <p>
+                    We break the motion into horizontal and vertical components. Since the launch angle is \(45^\circ\), the horizontal and vertical components of velocity are:
+                </p>
+                <p>
+                    \( v_x = v \cos 45^\circ = 100 \cdot \frac{\sqrt{2}}{2} \approx 70.71 \text{ m/s} \)
+                </p>
+                <p>
+                    \( v_y = v \sin 45^\circ = 100 \cdot \frac{\sqrt{2}}{2} \approx 70.71 \text{ m/s} \)
+                </p>
+                <p>
+                    Time to reach the peak is: \( t = \frac{v_y}{g} = \frac{70.71}{9.8} \approx 7.21 \text{ s} \)
+                </p>
+                <p>
+                    Total time of flight is twice that: \( 2t \approx 14.43 \text{ s} \)
+                </p>
+                <p>
+                    Horizontal distance: \( x = v_x \cdot t = 70.71 \cdot 14.43 \approx 1020 \text{ m} \)
+                </p>
+
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                        frameborder="0"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
