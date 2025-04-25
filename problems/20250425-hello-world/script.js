@@ -2,7 +2,7 @@ function checkAnswer() {
         const input = document.getElementById("answer");
         const btn = document.getElementById("solution-btn");
         const value = parseFloat(input.value);
-        const correct = Math.abs(value - 100) <= 1; // placeholder
+        const correct = Math.abs(value - 100) <= 1;
 
         input.classList.remove("correct", "incorrect");
         void input.offsetWidth; // restart animation

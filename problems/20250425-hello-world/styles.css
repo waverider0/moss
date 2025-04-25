@@ -79,7 +79,8 @@ input.incorrect {
 .solution-btn-wrapper {
         display: flex;
         justify-content: center;
-        margin-top: 4%;
+        margin-top: 5%;
+        margin-bottom: 5%;
 }
 
 .solution-header {
