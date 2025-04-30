@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Moss - Random Problems</title>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>mjx-container[jax="CHTML"][display="true"] { text-align: left !important; }</style>
     <link rel="stylesheet" href="../../styles.css" />
 </head>
 <body>
@@ -14,19 +15,23 @@
     </h1>
     <strong>Source: <a href="https://x.com/sonukg4india/status/1917465007857471559" target="_blank">x.com/sonukg4india</a></strong>
 
-    <p>\( f''(x) = 3x - 1 \)</p>
-    <p>\( f'(2) = 4 \)</p>
-    <p>\( f(2) = 2 \)</p>
-    <p>\( \text{Find} [f(x)]^2 \)</p>
+    <p>\[ f''(x) = 3x - 1 \]</p>
+    <p>\[ f'(2) = 4 \]</p>
+    <p>\[ f(2) = 2 \]</p>
+    <p>\[ \text{Find} [f(x)]^2 \]</p>
 
     <details>
         <summary><strong>Answer</strong></summary>
-        <p>hi</p>
+        <p>\[ [f(x)]^2 = \left(\frac{1}{2}x^3 - \frac{1}{2}x^2\right)^2 \]</p>
     </details>
 
     <details>
         <summary><strong>Solution</strong></summary>
-        <p>hi</p>
+        <p>\[ f'(x) = \int(3x - 1)\,dx = \frac{3}{2}x^2 - x + C_1 \]</p>
+        <p>\[ f'(2) = 4 \implies C_1 = 0 \]</p>
+        <p>\[ f(x) = \int\left(\frac{3}{2}x^2 - x\right)\,dx = \frac{1}{2}x^3 - \frac{1}{2}x^2 + C_2 \]</p>
+        <p>\[ f(2) = 2 \implies C_2 = 0 \]</p>
+        <p>\[ \boxed{[f(x)]^2 = \left(\frac{1}{2}x^3 - \frac{1}{2}x^2\right)^2} \]</p>
     </details>
 </body>
 </html>
